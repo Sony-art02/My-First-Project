@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mock Interview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>AI Interview</h2>
+    <span>Smart Career Preparation</span>
+</header>
+
+<section class="hero">
+    <h1>Practice. Improve. Succeed.</h1>
+    <p>Prepare for your dream job with AI Mock Interviews.</p>
+    <button onclick="startInterview()">Start Interview</button>
+</section>
+
+<div class="container">
+
+    <h2>Our Features</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🤖 AI Interview</h3>
+            <p>Practice interview questions for different job roles.</p>
+        </div>
+
+        <div class="card">
+            <h3>📄 Resume Analysis</h3>
+            <p>Get interview preparation based on your resume.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Performance Report</h3>
+            <p>Understand your strengths and areas to improve.</p>
+        </div>
+    </div>
+
+    <section class="interview" id="interview">
+        <h2>Start Your Practice</h2>
+
+        <label>Select Your Job Role</label>
+
+        <select id="role">
+            <option value="Software Developer">Software Developer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="HR">HR</option>
+            <option value="Web Developer">Web Developer</option>
+        </select>
+
+        <button onclick="askQuestion()">Get Interview Question</button>
+
+        <h3 id="question" style="margin-top:20px;"></h3>
+
+        <textarea id="answer"
+            placeholder="Type your answer here..."></textarea>
+
+        <button onclick="evaluateAnswer()">Submit Answer</button>
+
+        <div id="result"></div>
+    </section>
+
+</div>
+
+<footer>
+    <p>AI Mock Interview & Performance Analyzer</p>
+    <p>Practice makes progress!</p>
+</footer>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
